@@ -4,6 +4,12 @@ clear
 x = [1 2 3 4];
 h = [1 2 3];
 
+if length(x) < length(h)
+    temp_x = x;
+    x = h;
+    h = temp_x;
+end
+
 len_x = length(x);
 len_h = length(h);
 len_y = len_x + len_h - 1;
